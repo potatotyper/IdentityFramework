@@ -1,0 +1,8 @@
+﻿<h1>Deleting Account</h1>
+@if(TempData["Error"] != null)
+        {
+            <div class="col-md-12 alert alert-danger">
+                <span><b>Sorry!</b> - @TempData["Error"]</span>
+            </div>
+            <a type="btn btn-success" asp-controller="User" asp-action="Index" class="btn btn-sm btn-outline-secondary">Click here to return.</a>
+        }
